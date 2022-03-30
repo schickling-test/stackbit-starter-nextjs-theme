@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { GetStaticPaths, GetStaticProps } from 'next';
-import { allAuthorPostFeedLayouts, allPeople, allPostLayouts, allDocuments } from '.contentlayer/data';
+import { allAuthorPostFeedLayouts, allPeople, allPostLayouts, allDocuments } from 'contentlayer/generated';
 
 import type { PageProps } from '../../../components/layouts';
 import { BaseLayout } from '../../../components/layouts/BaseLayout';

@@ -69,7 +69,7 @@ export const PageLayout = defineDocumentType(() => ({
     computedFields: {
         slug: {
             type: 'string',
-            resolve: (_) => _._raw.flattenedPath.replace(/^pages(\/|$)/, '')
+            resolve: (_) => _._raw.flattenedPath.replace(/^content\/pages(\/|$)/, '')
         }
     }
 }));

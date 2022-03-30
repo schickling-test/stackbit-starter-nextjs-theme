@@ -17,6 +17,7 @@
         "incremental": true,
         "baseUrl": ".",
         "paths": {
+            "contentlayer/generated": ["./.contentlayer/generated"],
             "types": [".contentlayer/types/index.d.ts"]
         }
     },

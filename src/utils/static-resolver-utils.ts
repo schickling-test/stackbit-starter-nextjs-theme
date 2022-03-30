@@ -150,7 +150,7 @@ export function resolvePostLayout(postLayout: types.PostLayout, allDocuments: ty
  * @param document
  */
 export function urlPathForDocument(document: types.DocumentTypes) {
-    const relSourcePath = document._raw.sourceFilePath.replace(/^pages(\/|$)/, '');
+    const relSourcePath = document._raw.sourceFilePath.replace(/^content\/pages(\/|$)/, '');
     const pathObject = path.posix.parse(relSourcePath);
     const parts = pathObject.dir.split(path.posix.sep).filter(Boolean);
     if (pathObject.name !== 'index') {
